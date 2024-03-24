@@ -32,7 +32,7 @@ const Movie = () => {
   return (
     <>
       {movieList.map((movie) => (
-  <div className="main" key={movie.id}>
+  <div className='main' key={movie.id}>
     <img  className="image" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="" />
     
     {/* <h1>{movie.title}</h1> */}

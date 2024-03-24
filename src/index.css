@@ -13,11 +13,26 @@ code {
 }
 
 
-P{
+/* P{
   margin:10px;
 }
 
 .image{
   display:flex;
   flex-direction: row;
-}      
+}       */
+
+.image{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:100px;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  
+
+
+}
