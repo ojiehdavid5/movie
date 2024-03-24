@@ -16,3 +16,8 @@ code {
 P{
   margin:10px;
 }
+
+.image{
+  display:flex;
+  flex-direction: row;
+}      
