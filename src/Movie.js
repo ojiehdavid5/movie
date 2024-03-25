@@ -15,11 +15,15 @@ const Movie = () => {
       };
     };
     
-    fetch('https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=5', getMovie())
-      .then(response => response.json())
-      .then(response => setMovieList(response.results))
-      .catch(err => console.error(err));
+    // fetch('https://api.themoviedb.org/3/movie/?language=en-US&page=5', getMovie())
+    //   .then(response => response.json())
+    //   .then(response => setMovieList(response.results))
+    //   .catch(err => console.error(err));
 
+    fetch('https://api.themoviedb.org/3/movie/1/videos?language=en-US', getMovie())
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
 
 
       useEffect(() =>{
