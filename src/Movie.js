@@ -1,7 +1,10 @@
 import React from 'react'
+
 import {useState,useEffect} from "react"
 
-const Movie = () => {
+
+
+const Movie = ({change}) => {
 
     const [movieList,setMovieList]=useState([])
 
@@ -20,9 +23,9 @@ const Movie = () => {
     //   .then(response => setMovieList(response.results))
     //   .catch(err => console.error(err));
 
-    fetch('https://api.themoviedb.org/3/movie/1/videos?language=en-US', getMovie())
+    fetch(`https://api.themoviedb.org/3/movie/popular`, getMovie())
   .then(response => response.json())
-  .then(response => console.log(response))
+  .then(response => console.log(response.results))
   .catch(err => console.error(err));
 
 
@@ -49,4 +52,4 @@ const Movie = () => {
   )
 }
 
-export default Movie
+export default Movie;
